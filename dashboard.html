@@ -2,10 +2,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Task Output Dashboard</title>
+    <title>Internship Analytics Dashboard</title>
     <style>
         body {
-            background:#0f0f0f;
+            background:#111;
             color:white;
             font-family:Arial;
             margin:0;
@@ -17,36 +17,32 @@
         .container {
             display:flex;
             padding:20px;
-            gap:20px;
         }
-        .left {
+        .main {
             flex:3;
-            display:flex;
-            flex-direction:column;
-            gap:20px;
         }
-        .right {
+        .side {
             flex:1;
-            display:flex;
-            flex-direction:column;
+            display:grid;
+            grid-template-columns:1fr;
             gap:15px;
+            padding-left:20px;
         }
-        .task-output {
-            background:#1e1e1e;
-            padding:20px;
-            border-radius:12px;
-        }
-        .graph-img {
+        img {
             width:100%;
-            margin-top:15px;
-            border-radius:10px;
+            border-radius:8px;
         }
-        .locked-task {
-            background:#2a2a2a;
+        .main-card {
+            background:#222;
             padding:15px;
             border-radius:10px;
-            opacity:0.6;
+        }
+        .locked-card {
+            background:#333;
+            padding:15px;
+            border-radius:10px;
             text-align:center;
+            opacity:0.6;
         }
         p {
             color:#aaa;
@@ -55,44 +51,44 @@
 </head>
 <body>
 
-<h1>📊 Task Output Dashboard</h1>
-<p style="text-align:center;">Current IST Hour: <b>11</b></p>
+<h1>📊 Google Play Store App's Dashboard</h1>
+<p style="text-align:center;">Current IST Hour: <b>14</b></p>
 
 <div class="container">
-    <div class="left">
-        <p>No active task right now ⏰</p>
+    <div class="main">
+        <p>No graph available at this time ⏰</p>
     </div>
 
-    <div class="right">
+    <div class="side">
         
-        <div class="locked-task">
+        <div class="locked-card">
             <h3>Task 1</h3>
-            <p>⏰ Time: 3 PM – 5 PM IST</p>
+            <p>⏰ Available: 3 PM – 5 PM IST</p>
         </div>
         
-        <div class="locked-task">
+        <div class="locked-card">
             <h3>Task 2</h3>
-            <p>⏰ Time: 6 PM – 8 PM IST</p>
+            <p>⏰ Available: 6 PM – 8 PM IST</p>
         </div>
         
-        <div class="locked-task">
+        <div class="locked-card">
             <h3>Task 3</h3>
-            <p>⏰ Time: 1 PM – 2 PM IST</p>
+            <p>⏰ Available: 1 PM – 2 PM IST</p>
         </div>
         
-        <div class="locked-task">
+        <div class="locked-card">
             <h3>Task 4</h3>
-            <p>⏰ Time: 6 PM – 9 PM IST</p>
+            <p>⏰ Available: 6 PM – 9 PM IST</p>
         </div>
         
-        <div class="locked-task">
+        <div class="locked-card">
             <h3>Task 5</h3>
-            <p>⏰ Time: 5 PM – 7 PM IST</p>
+            <p>⏰ Available: 5 PM – 7 PM IST</p>
         </div>
         
-        <div class="locked-task">
+        <div class="locked-card">
             <h3>Task 6</h3>
-            <p>⏰ Time: 4 PM – 6 PM IST</p>
+            <p>⏰ Available: 4 PM – 6 PM IST</p>
         </div>
         
     </div>
